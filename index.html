@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AirGuard | Air Monitoring & Awareness</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav>
+<h1>AirGuard</h1>
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#monitor">Monitor</a></li>
+<li><a href="#awareness">Awareness</a></li>
+</ul>
+</nav>
+
+<section class="hero" id="home">
+<h2>Know Your Air. Protect Your Future.</h2>
+<p>Real-time air quality insights, health awareness, and sustainable action — all in one platform.</p>
+<button class="btn" onclick="scrollToMonitor()">Check AQI Now</button>
+</section>
+
+<section class="section" id="monitor">
+<div class="card">
+<h2>Live Air Quality Index</h2>
+
+<div class="search-box">
+<input type="text" id="cityInput" placeholder="Enter City">
+<button class="btn" onclick="getAQI()">Search</button>
+</div>
+
+<div class="aqi-value" id="aqiValue">--</div>
+<p id="aqiStatus">Enter a city to check AQI</p>
+</div>
+</section>
+
+<section class="section" id="awareness">
+<h2 style="text-align:center;margin-bottom:50px;">Health Awareness</h2>
+
+<div class="grid">
+<div class="info-box">
+<h3>Respiratory Issues</h3>
+<p>High pollution levels can cause asthma, lung infections, and breathing problems.</p>
+</div>
+
+<div class="info-box">
+<h3>Children at Risk</h3>
+<p>Kids are more vulnerable to air pollution due to developing lungs.</p>
+</div>
+
+<div class="info-box">
+<h3>Preventive Measures</h3>
+<p>Wear masks, use air purifiers, and avoid outdoor activities during high AQI.</p>
+</div>
+
+<div class="info-box">
+<h3>Take Action</h3>
+<p>Use public transport, reduce burning waste, and plant more trees.</p>
+</div>
+</div>
+</section>
+
+<footer>
+<p>© 2026 AirGuard | Created by Payal 🚀</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
